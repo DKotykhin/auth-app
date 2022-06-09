@@ -12,11 +12,11 @@ function Form({ title, handleClick }) {
     const { control, handleSubmit, formState: { errors, isValid }, reset } = useForm(FormValidation);
     
     const onSubmit = data => {
-      const { email, password } = data
-      console.log(data);
-      handleClick(email, password)
-      reset()
-  }
+        const { email, password } = data
+        console.log(data);
+        handleClick(email, password)
+        reset()
+    }
     
   return (
     <>
